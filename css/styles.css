@@ -39,6 +39,7 @@ h3 {
 }
 
 hr{
+  margin: auto;
   width: 5%;
   margin-top: 5.65rem;
   margin-bottom: 5.65rem;
@@ -48,7 +49,7 @@ hr{
   border-right-style: none;
   height:0;
   border-width: 8px;
-  color: #EAF6F6;
+  color: #000;
 }
 
 .freelance {
@@ -86,6 +87,7 @@ hr{
 .skill-image-1 {
   border-radius: 100%;
   margin: auto;
+
   float: left;
   width: 20%;
   margin-right: 30px;
@@ -106,13 +108,13 @@ hr{
 }
 .bottom-cloud {
   position: absolute;
-  left: 15%;
-  bottom: 40%;
+  left: 300px;
+  bottom: 350px;
 }
 .top-cloud {
   position: absolute;
-  right: 25%;
-  top: 10%x;
+  right: 300px;
+  top: 100px;
 }
 .middle-container {
   margin-top: 5rem;
@@ -132,6 +134,17 @@ hr{
   margin-top: 5rem;
   background-color: #66BFBF;
     font-size: 1.3rem;
+}
+.tindog-img {
+  width: 10%;
+  border-radius: 100%;
+
+}
+
+.carousel-item {
+  width: 50%
+  margin: auto;
+  background-color: #E4F9F5;
 }
 .contact-me {
   text-align: center;
@@ -161,9 +174,8 @@ hr{
 .end-link:hover {
   color: white;
 }
-.mountain {
-   width: 50%;
-   height: 50%;
+.navbar {
+  background-color: #E4F9F5;
 }
 
 
@@ -194,4 +206,30 @@ font-family: 'Montserrat', sans-serif;
   background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
   background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
   text-decoration: none;
+}
+
+
+@media (max-width:1208px) {
+  .bottom-cloud {
+    position: absolute;
+    left: 10%;
+    bottom: 45%;
+  }
+  .top-cloud {
+    position: absolute;
+    right: 10%;
+    top: 10%;
+  }
+  .intro {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+  }
+  .skill-row-1 {
+    width: 60%;
+  }
+  .skill-row-2 {
+    width: 60%;
+  }
+
 }
