@@ -14,12 +14,41 @@ p {
     color: #40514E;
 }
 
+
 h1 {
-  font-family: 'Sacramento', cursive;
+  font-family: monospace;
   font-size: 5.65rem;
   color: #66BFBF;
   line-height: 2;
   margin: 2.6rem auto 0 auto;
+}
+
+h1 span {
+	position : relative;
+}
+
+h1 span::before,
+h1 sapn::after {
+	content: '';
+	position : absolute;
+	top : 0;
+	bottom : 0;
+	left : 0;
+	right :0;
+}
+
+h1 span::before {	
+	background-color : #E4F9F5;
+	border-left : 5px solid teal;
+	animation :	typing 5s steps(9) forwards,
+	blinking 750ms 8 forwards;
+}
+
+@keyframes blinking {
+	to {border-left : 5px solid #E4F9F5;}
+}
+@keyframes typing {
+	to {left : 100%;}
 }
 h2 {
   font-family: 'Montserrat', sans-serif;
