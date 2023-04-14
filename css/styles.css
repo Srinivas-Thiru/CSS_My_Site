@@ -182,9 +182,10 @@ hr{
 .footer-link {
   position: relative;
   top: 1rem;
-  text-decoration: none;
   margin: auto 3%;
-  font-size: 80%;
+  height : 2vh;
+  width : 2vh;
+  background-color: #000;
 }
 .footer-link:hover {
   color: white;
